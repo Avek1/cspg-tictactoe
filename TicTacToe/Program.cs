@@ -18,6 +18,8 @@ namespace TicTacToe
 
             while(!winChecker.IsDraw(board) && winChecker.Check(board) == State.Undecided)
             {
+                renderer.Render(board);
+
                 Position nextMove;
                 if (board.NextTurn == State.X)
                     nextMove = player1.GetPosition(board);

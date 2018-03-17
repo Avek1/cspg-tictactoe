@@ -28,9 +28,9 @@ namespace TicTacToe
 
             for (int column = 0; column < 3; column++)
                 if (AreAll(board, new Position[] {
-                    new Position(column, 0),
-                    new Position(column, 1),
-                    new Position(column, 2)
+                    new Position(0, column),
+                    new Position(1, column),
+                    new Position(2, column)
                 }, player))
                     return true;
 
@@ -46,7 +46,7 @@ namespace TicTacToe
             {
                 new Position(2, 0),
                 new Position(1, 1),
-                new Position(0, 1)
+                new Position(0, 2)
             }, player))
                 return true;
 
